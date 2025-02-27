@@ -14,29 +14,14 @@ To run the simulation, ensure you have:
 
 ### 🛠 Setting Up SDL2
 
-#### Windows Installation:
-1. 🔗 [Download SDL2](https://www.libsdl.org/download-2.0.php)
-2. 📂 Extract the files into your project directory
-3. 🏗 Organize the following folders if missing:
-   - `include/` → For header files
-   - `lib/` → For compiled libraries
-   - `bin/` → For executable files
+Windows Installation:
+Download SDL2
+Extract the files into your project directory
 
-## 📂 Project Layout
+Compiling the Project
 
-```
-DSA-Queue-Simulator/
-├── include/          # Header files
-├── lib/              # Library files
-├── src/              # Source code
-├── bin/              # Executable files
-└── README.md
-```
+Clone the repository:
 
-## 🏗️ Compiling the Project
-
-1. Clone the repository:
-```bash
 git clone https://github.com/sugammahara/DSA-Traffic.git
 cd DSA-Queue-Simulator
 ```
@@ -46,19 +31,19 @@ cd DSA-Queue-Simulator
 g++ -Iinclude -Llib -o bin/main.exe src/main.c src/traffic_simulation.c -lmingw32 -lSDL2main -lSDL2
 ```
 
-3. Compile the vehicle generator:
-```bash
+Compile the vehicle generator:
+
 g++ -o bin/generator src/generator.c src/traffic_simulation.c -lSDL2 -Iinclude -Llib -lmingw32 -lSDL2main -lSDL2
-```
+
 
 ## ▶️ Running the Simulation
 
-1. Launch the vehicle generator:
-```bash
+Launch the vehicle generator:
+
 ./bin/generator
 ```
-2. Open another terminal and run the main simulation:
-```bash
+Open another terminal and run the main simulation:
+
 ./bin/main
 
 ## 🚙 Vehicle Categories
