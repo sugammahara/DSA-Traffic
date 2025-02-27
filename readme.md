@@ -24,12 +24,11 @@ Clone the repository:
 
 git clone https://github.com/sugammahara/DSA-Traffic.git
 cd DSA-Queue-Simulator
-```
 
-2. Compile the main application:
-```bash
+ Compile the main application:
+
 g++ -Iinclude -Llib -o bin/main.exe src/main.c src/traffic_simulation.c -lmingw32 -lSDL2main -lSDL2
-```
+
 
 Compile the vehicle generator:
 
@@ -41,7 +40,7 @@ g++ -o bin/generator src/generator.c src/traffic_simulation.c -lSDL2 -Iinclude -
 Launch the vehicle generator:
 
 ./bin/generator
-```
+
 Open another terminal and run the main simulation:
 
 ./bin/main
@@ -72,7 +71,7 @@ typedef struct {
     Node* rear;
     int size;
 } Queue;
-```
+
 
 Vehicle Movement States
 
