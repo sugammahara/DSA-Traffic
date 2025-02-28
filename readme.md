@@ -1,4 +1,4 @@
-Traffic Queue Simulation
+###Traffic Queue Simulation
 
 A real-time traffic intersection simulation using queue data structures for effective traffic control. This project models various vehicle types, traffic lights, and priority-based queuing.
 
