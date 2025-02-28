@@ -75,10 +75,12 @@ typedef struct {
 
 Vehicle Movement States
 
+typedef enum{
     STATE_MOVING,
     STATE_STOPPING,
     STATE_STOPPED,
     STATE_TURNING
+    } VehicleState;
 
 Key Features
 
